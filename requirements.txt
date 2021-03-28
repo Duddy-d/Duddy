@@ -1,1 +1,1 @@
-python-3.7.6
+discord.py==0.16.12
