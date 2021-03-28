@@ -9,7 +9,6 @@ from discord.ext import commands
 from discord.utils import get
 import pytz
 
-token = "ODEyMjAzNzY2NzU2NTQwNDE3.YC9VtA.z0PuGb_BU5AKZISA5B5lpWUOG-c" 
 
 client = commands.Bot(command_prefix= "/")
 
@@ -638,7 +637,6 @@ async def on_message(message):
  
         if i is False:
             await message.channel.send("{}, 당신은 관리자가 아닙니다".format(message.author.mention))
-
-    
-client.run(token)
+access_token = os.environ["ODEyMjAzNzY2NzU2NTQwNDE3.YC9VtA.z0PuGb_BU5AKZISA5B5lpWUOG-c"]
+client.run(access_token)
 
